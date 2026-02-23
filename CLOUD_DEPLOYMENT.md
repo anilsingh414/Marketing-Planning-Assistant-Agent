@@ -39,7 +39,7 @@ Render is a great alternative to Streamlit Cloud. Here is how to use the "Bluepr
 ## Step 2: Configure Environment
 Render will automatically detect the `render.yaml` file I added.
 1.  It will ask you for a **`GEMINI_API_KEY`**.
-2.  Paste your key: `AIzaSyA8Pb96OqYx1FijR3aB8zcweS4uO2F4E7Q`
+2.  Paste your actual Gemini API key there (found in AI Studio).
 3.  Click **"Apply"**.
 
 ## Step 3: Wait for Build
