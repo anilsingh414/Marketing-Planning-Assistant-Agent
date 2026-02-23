@@ -1,4 +1,4 @@
-# Marketing AI Planner (Lite) 🚀
+# Marketing Planning Assistant Agent
 
 A lightweight, high-performance multi-agent system built with the Groq SDK and Streamlit to support Python 3.14+.
 
