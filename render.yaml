@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: marketing-planner
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false # User must set this in Render dashboard
+      - key: MODEL_NAME
+        value: gemini-flash-latest
+      - key: CREWAI_TELEMETRY_OPT_OUT
+        value: "true"
+      - key: OTEL_SDK_DISABLED
+        value: "true"

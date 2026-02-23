@@ -27,5 +27,24 @@ I've updated the code in `agents.py` to automatically detect if it's running in 
 
 ---
 
-### Alternative: Deployment on Render / Hugging Face
-If you prefer other platforms, ensure you set the **`GEMINI_API_KEY`** and **`MODEL_NAME`** as **Environment Variables** in their respective dashboards.
+# 🔘 Alternative: Deploy on Render.com
+
+Render is a great alternative to Streamlit Cloud. Here is how to use the "Blueprint" I just created for you:
+
+## Step 1: Link your Repo
+1.  Go to [dashboard.render.com](https://dashboard.render.com) and log in with GitHub.
+2.  Click **"New +"** -> **"Blueprint"**.
+3.  Select your `Marketing-Planning-Assistant-Agent` repository.
+
+## Step 2: Configure Environment
+Render will automatically detect the `render.yaml` file I added.
+1.  It will ask you for a **`GEMINI_API_KEY`**.
+2.  Paste your key: `AIzaSyA8Pb96OqYx1FijR3aB8zcweS4uO2F4E7Q`
+3.  Click **"Apply"**.
+
+## Step 3: Wait for Build
+Render will install your dependencies and start the app. Once finished, you will get a URL like `https://marketing-planner.onrender.com`.
+
+> [!TIP]
+> **Important for Render Free Tier**:
+> The first time you visit the site, it might take a minute to "wake up" the server if it hasn't been used recently. This is normal for the free tier.
